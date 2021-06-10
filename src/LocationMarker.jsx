@@ -9,7 +9,7 @@ const LocationMarker = ({ weather, latLng}) => {
 
     const image = new Leaflet.Icon({
                iconUrl:    (weather.weather ? `https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png` : 'https://i.imgur.com/CVM0upn.png' ) ,
-               shadowUrl: '/src/shadow.png',
+               shadowUrl: './shadow.png',
                iconSize:    (weather.weather ? [120, 120] : [25, 35]), // size of the icon
                shadowSize:   [10, 10], // size of the shadow
                iconAnchor:   latLng, // point of the icon which will correspond to marker's location
