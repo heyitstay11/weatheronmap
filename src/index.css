@@ -1,0 +1,101 @@
+html, body, #root {
+  font: 0.9rem sans-serif;
+  background: #0a1f44;
+  color: #1e2432;
+  height: 100%;
+  margin: 0;
+}
+
+.main-container {
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(255, 166, 166, 0.418) ), url('./img.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.main-container h1 {
+  color: whitesmoke;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+}
+
+.main-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.search {
+  outline: none;
+  padding: 10px 7%;
+  font-size: 1.2rem;
+  border-radius: 20px;
+  border: none;
+  margin-bottom: .8rem;
+  background: rgba(250, 250, 250, 0.85);
+}
+
+.center {
+  text-align: center;
+}
+
+.city {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 8px 40px;
+  border-radius: 20px;
+  margin-bottom: 1.4rem;
+  background: rgba(250, 250, 250, 0.85);
+  box-shadow: 10px 10px 5px 0px rgba(15, 15, 15, 0.404);
+}
+
+p {
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.desc{
+  letter-spacing: .6px;
+  font-size: 1.1rem;
+}
+
+.city sup {
+  font-size: 0.5em;
+}
+
+.city-name {
+  font-size: 1.5em;
+  margin: 0;
+}
+body > img{
+  margin: 0 !important;
+}
+
+.city-name sup {
+  padding: 0.2em 0.6em;
+  margin-left: 0.2em;
+  border-radius: 30px;
+  color: #fff;
+  background: #ff8c00;
+}
+
+.leaflet-container {
+  width: 650px;
+  max-width: 90vw;
+  height: 250px;
+}
+
+@media only screen and (max-width: 600px) {
+  .search {
+      padding: 20px 15%;
+  }
+
+  .city {
+      padding: 12px 20px;
+  }
+}
+
