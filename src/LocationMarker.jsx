@@ -12,7 +12,7 @@ const LocationMarker = ({ weather, latLng}) => {
                shadowUrl: 'https://i.imgur.com/DIpMMRb.png',
                iconSize:    (weather.weather ? [120, 120] : [25, 35]), // size of the icon
                shadowSize:   [0, 0], // size of the shadow
-               iconAnchor:   latLng, // point of the icon which will correspond to marker's location
+               iconAnchor:  [22, 94], // point of the icon which will correspond to marker's location
                shadowAnchor: [-10, 28],  // the same for the shadow
                popupAnchor:  (weather.weather ? [26, -36] : [-6, -66])// point from which the popup should open relative to the iconAnchor
            });
@@ -20,7 +20,7 @@ const LocationMarker = ({ weather, latLng}) => {
 
         const map = useMap(); 
         useEffect(() => {
-          map.flyTo(latLng, 9, {
+          map.flyTo(latLng, 10, {
             animate: true,
             duration: 3
         });
