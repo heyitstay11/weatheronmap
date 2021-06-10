@@ -3,3 +3,5 @@
 Made using vitejs
 npm install // download all dependencies 
 npm run dev // start the server 
+
+![App](appSS.png "Weather App")
