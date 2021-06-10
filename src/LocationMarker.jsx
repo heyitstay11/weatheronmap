@@ -24,7 +24,8 @@ const LocationMarker = ({ weather, latLng}) => {
             animate: true,
             duration: 3
         });
-        }, [weather, latLng])
+        console.log('Fly !!!')
+        }, [latLng])
       
 
     return(
